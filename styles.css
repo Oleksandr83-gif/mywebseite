@@ -1,0 +1,164 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Устанавливает высоту экрана */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Шапка */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem 0;
+    border-bottom: 2px solid #0056b3;
+    height: 120px; /* Фиксированная высота (подберите нужное значение) */
+    box-sizing: border-box; /* Учитывает padding в общей высоте */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.logo h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0.2rem;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Главный контент */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    height: calc(100vh - 70px); /* Высота экрана минус высота шапки */
+    width: 100vw; /* Ширина экрана */
+    box-sizing: border-box; /* Учитывает padding и border в общей ширине */
+}
+
+/* Левая часть с текстом */
+.text-section {
+    flex: 1;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.btn-more {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-more:hover {
+    background-color: #0056b3;
+}
+
+/* Правая часть (Фото) */
+.photo-section {
+    flex: 1; /* Растягивает правую часть равномерно */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden; /* Скрываем выходящие за пределы контейнера элементы */
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Масштабирование изображения, чтобы оно заполнило контейнер */
+    display: block;
+}
+/* Подвал */
+.footer {
+    background-color: #333; /* Тёмный фон */
+    color: white; /* Белый текст */
+    padding: 2rem 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Для адаптивности */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.footer-left p, .footer-right p {
+    margin: 0.5rem 0;
+    line-height: 1.4;
+}
+
+.footer-right p a {
+    color: #ffcc00; /* Цвет ссылок */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-right p a:hover {
+    color: #fff; /* Цвет при наведении */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid #555; /* Линия для разделения */
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
