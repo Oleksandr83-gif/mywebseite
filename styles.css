@@ -162,3 +162,48 @@ header {
     padding-top: 1rem;
     font-size: 0.9rem;
 }
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .text-section {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .btn-more {
+        width: 100%;
+    }
+
+    .photo-section {
+        margin-top: 1rem;
+    }
+
+    .photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
