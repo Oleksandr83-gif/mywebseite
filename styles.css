@@ -162,21 +162,31 @@ header {
     padding-top: 1rem;
     font-size: 0.9rem;
 }
-
 /* Мобильная адаптация */
 @media (max-width: 768px) {
     body {
-        font-size: 14px;
+        font-size: 16px; /* Немного увеличиваем размер текста */
+        line-height: 1.5; /* Оптимальный межстрочный интервал */
+        margin: 0;
+        padding: 0;
     }
 
+    /* Шапка */
     .header-container {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        padding: 1rem;
     }
 
     .nav-menu ul {
         flex-direction: column;
         text-align: center;
+        gap: 0.5rem; /* Уменьшение расстояния между ссылками */
+    }
+
+    .nav-menu ul li {
+        margin: 0.5rem 0;
     }
 
     .main-container {
@@ -184,26 +194,46 @@ header {
         padding: 1rem;
     }
 
+    /* Текстовый блок */
     .text-section {
-        margin-right: 0;
+        margin: 0 auto;
+        padding: 0 1rem;
         text-align: center;
+    }
+
+    .text-section h3 {
+        font-size: 1.6rem; /* Уменьшение заголовка */
     }
 
     .btn-more {
-        width: 100%;
+        width: 80%; /* Кнопка занимает 80% ширины */
+        margin: 1rem auto;
     }
 
+    /* Фото */
     .photo-section {
         margin-top: 1rem;
+        text-align: center;
     }
 
     .photo {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Фото занимает всю ширину */
+        height: auto; /* Масштабирование по высоте */
     }
 
+    /* Подвал */
     .footer-container {
         flex-direction: column;
         text-align: center;
+        padding: 1rem 0;
+    }
+
+    .footer-left, .footer-right {
+        margin-bottom: 1rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem; /* Уменьшение текста */
     }
 }
+
